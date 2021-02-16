@@ -8,7 +8,8 @@ Per darvi un idea, un blog ha degli articoli, categorie, tags etc.
 Create nel diagramma anche le altre entitá e definite per ciascuna le rispettive classi con proprietá e metodi. -->
 
 <?php
-include __DIR__ . "./classes/user.php";
+// include __DIR__ . "./classes/user.php";
+include __DIR__ . "./classes/articles.php";
 
 $user1 = new User("Angelo", "Dotti", "angelo83", "password1", "24-05-1983");
 $user2 = new User("Mario", "Bianchi", "white_M", "password2", "10-01-1998");
@@ -19,7 +20,8 @@ $user6 = new User("Aldo", "Biscardi", "Aldone50", "password", "20-07-1954");
 // var_dump($user6);
 $usersList = [$user1, $user2, $user3, $user4, $user5, $user6];
 // var_dump($usersList);
-
+$item1 = new article("il virus", "kdjfvefbebfvkjebvkbef", "10-02-2021", "alessandro_m");
+var_dump($item1);
 
 
 ?>
@@ -30,12 +32,12 @@ $usersList = [$user1, $user2, $user3, $user4, $user5, $user6];
     <title></title>
   </head>
   <body>
-    <h1>Lista Utenti</h1>
+    <h1>Lista Utenti </h1>
     <?php foreach ($usersList as $value): ?>
       <div>
         <h2><?php echo "$value->user_name $value->user_lastName" ?></h2>
-        <h3><?php echo ($value->user_id); ?></h3>
-        <h4><?php echo ($value->user_age_of_birth); ?></h4>
+        <h3>User_id: <?php echo ($value->user_id); ?></h3>
+        <h4>user_age_of_birth: <?php echo ($value->user_age_of_birth); ?></h4>
         <br>
 
       </div>

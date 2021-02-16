@@ -1,5 +1,5 @@
 <?php
-class User{
+class user{
   public $user_name;
   public $user_lastName;
   public $user_id;
@@ -15,4 +15,6 @@ class User{
     $this->user_age_of_birth = $user_age_of_birth;
   }
 }
+
+
  ?>
