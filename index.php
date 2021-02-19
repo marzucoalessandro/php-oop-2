@@ -22,7 +22,7 @@ $usersList = [$user1, $user2, $user3, $user4, $user5, $user6];
 // var_dump($usersList);
 $item1 = new article( "alessandro_m", "il virus", "kdjfvefbebfvkjebvkbef", "10-02-2021");
 $item2 = new article("gregorio_V", "freddo", "hsdfjhdsbjhdbfjhd", "15-03-2021");
-
+$itemsList = [$item1, $item2];
 
 
 
@@ -41,8 +41,19 @@ $item2 = new article("gregorio_V", "freddo", "hsdfjhdsbjhdbfjhd", "15-03-2021");
         <h3>User_id: <?php echo ($value->user_id); ?></h3>
         <h4>user_age_of_birth: <?php echo ($value->user_age_of_birth); ?></h4>
         <br>
-
       </div>
     <?php endforeach; ?>
+
+    <h1>Lista articoli</h1>
+    <?php foreach ($itemsList as $value): ?>
+      <div>
+        <h2>Utente: <?php echo $value->user_id ?></h2>
+        <h3>Titolo: <?php echo $value->title ?></h3>
+        <h3>Testo: <?php echo $value->text ?></h3>
+        <h4>Data: <?php echo $value->date ?></h4>
+        <br>
+      </div>
+    <?php endforeach; ?>
+
   </body>
 </html>
