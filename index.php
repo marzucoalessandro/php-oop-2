@@ -20,8 +20,10 @@ $user6 = new User("Aldo", "Biscardi", "Aldone50", "password", "20-07-1954");
 // var_dump($user6);
 $usersList = [$user1, $user2, $user3, $user4, $user5, $user6];
 // var_dump($usersList);
-$item1 = new article("il virus", "kdjfvefbebfvkjebvkbef", "10-02-2021", "alessandro_m");
-var_dump($item1);
+$item1 = new article( "alessandro_m", "il virus", "kdjfvefbebfvkjebvkbef", "10-02-2021");
+$item2 = new article("gregorio_V", "freddo", "hsdfjhdsbjhdbfjhd", "15-03-2021");
+
+
 
 
 ?>

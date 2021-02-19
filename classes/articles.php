@@ -8,12 +8,13 @@ class article extends user{
   public $date;
   public $image;
 
-  public function __construct(string $title, string $text, string $date, string $user_id){
-
+  public function __construct(string $user_id, string $title, string $text, string $date){
+    // parent::__construct($user_id);
+    $this->user_id = $user_id; 
     $this->title = $title;
     $this->text = $text;
     $this->date = $date;
-    $this->user_id = $user_id;
+
   }
 }
 
