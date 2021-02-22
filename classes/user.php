@@ -1,4 +1,4 @@
-<?php
+ <?php
 class user{
   public $user_name;
   public $user_lastName;

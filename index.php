@@ -9,7 +9,7 @@ Create nel diagramma anche le altre entitá e definite per ciascuna le rispettiv
 
 <?php
 // include __DIR__ . "./classes/user.php";
-include __DIR__ . "./classes/articles.php";
+include __DIR__ . "/classes/articles.php";
 
 $user1 = new User("Angelo", "Dotti", "angelo83", "password1", "24-05-1983");
 $user2 = new User("Mario", "Bianchi", "white_M", "password2", "10-01-1998");
